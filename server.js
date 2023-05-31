@@ -5,7 +5,7 @@
 * 
 *  Name: Arzu Gizem Kirici Student ID: 135304210 Date: May 30,2023
 *
-*  Cyclic Web App URL: ________________________________________________________
+*  Cyclic Web App URL: https://agile-veil-hare.cyclic.app
 *
 *  GitHub Repository URL: https://github.com/agkirici/web322-app
 *
