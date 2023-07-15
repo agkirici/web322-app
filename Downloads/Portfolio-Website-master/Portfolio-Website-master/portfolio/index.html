@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preload" href="Images/backImage.jpg" as="image">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2bf22bb20a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Introductory Header -->
+    <header id="intro">
+        <img src="Images/profile.jpg" alt="My Profile Picture">
+        <h1 title="Call me AMNISH!">Amnish Singh Arora</h1>
+        <p>Programming Student<br> at Seneca!</p>
+        <div class="buttons">
+            <a title="Download My Resume!"  href="./Documents/Amnish_SinghArora_Resume.PDF" target="_blank">
+                <svg class="medIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M480 352h-133.5l-45.25 45.25C289.2 409.3 273.1 416 256 416s-33.16-6.656-45.25-18.75L165.5 352H32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96C512 366.3 497.7 352 480 352zM432 456c-13.2 0-24-10.8-24-24c0-13.2 10.8-24 24-24s24 10.8 24 24C456 445.2 445.2 456 432 456zM233.4 374.6C239.6 380.9 247.8 384 256 384s16.38-3.125 22.62-9.375l128-128c12.49-12.5 12.49-32.75 0-45.25c-12.5-12.5-32.76-12.5-45.25 0L288 274.8V32c0-17.67-14.33-32-32-32C238.3 0 224 14.33 224 32v242.8L150.6 201.4c-12.49-12.5-32.75-12.5-45.25 0c-12.49 12.5-12.49 32.75 0 45.25L233.4 374.6z"/></svg>
+                Resume</a>
+            <a title="To the form?" href="#form">Contact Me</a>
+        </div>
+    </header>
+    <hr>
+    <!-- Rest of the Content -->
+    <main>
+        <!-- Academic Honesty  -->
+        <div class="infographics">
+            <section id="aboutMe">
+                <h2>About Me!</h2>
+                <p>
+                    <span class="firstLetter">A</span>&nbsp; 20 year old Seneca College student majoring in Computer Programming and Analysis. I am deeply intrigued by the concept of raw data being manipulated and turned into information that can be used to solve problems and innovate current technologies. Currently looking for a Software/Web develpoment interniship at a reputed organisation for my 2022 Fall Work Term (CO-OP) to get my feet wet!
+                </p>
+                <p><span class="bold">Date: </span><span id="date"></span></p>
+            </section>
+            <!-- Basic Info Section -->
+            <section id="basicInfo">
+                <h2>
+                    Basic Information 
+                    <i class="fa-solid fa-address-card medIcon"></i>
+                </h2>
+                <p>
+                    <span class="property">AGE</span>:&nbsp;<span class="value">20</span>
+                </p>
+                <p>
+                    <span class="property">EMAIL</span>:&nbsp;<span class="value">asarora1@myseneca.ca, amnishsingh04@gmail.com</span>
+                </p>
+                <p>
+                    <span class="property">SKILLS</span>:&nbsp;<span class="value">Core C/C++, Python3, HTML5, CSS3, Vanilla JavaScript, SQL (Oracle), Node.js, Express.js, UML Diagramming</span>
+                </p>
+                <p>
+                    <span class="property">STATUS</span>:&nbsp;<span class="value">Looking for a software based CO-OP/Internship</span>
+                </p>
+                <p>
+                    <span class="property">LANGUAGES</span>:&nbsp;<span class="value">English, Hindi, Punjabi</span>
+                </p>
+            </section>
+        </div>
+        <div class="clear"></div>
+        <hr>
+        <section id="education"> <!-- IDs used instead of class because there is only one such section -->
+            <h2>Education
+                <i class="fa-solid fa-book medIcon"></i>
+            </h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Images/Seneca.png" alt="Seneca Image">
+                    </div>
+                    <div class="card-content">
+                            <h2>Computer Programming and Analysis</h2>
+                            <h3>Seneca College (2021-2024)</h3>
+                        <p>This three-year advanced diploma program provides the students with the skills and knowledge to begin your career as a software developer. You will learn programming languages, program design and system analysis. Web concepts are integrated into all courses to develop active database web programs on a variety of operating systems.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Images/school.jpg" alt="School Image">
+                    </div>
+                    <div class="card-content">
+                        <h2>High School</h2>
+                        <h3>DAV International School (2020)</h3>
+                        <p>Graduated from high school majoring in non-medical sciences i.e. Physics, Chemistry and Mathematics after rigorous preparation in the subjects for the IIT-JEE Examination!</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <section id="form">
+            <h2>Contact Me 
+                <i class="fa-solid fa-message medIcon"></i>
+            </h2>
+            <!-- No autocomplete allowed -->
+            <form id="contactForm" name="contactForm" action="https://mail-sender-api-uhn1.onrender.com" method="post" autocomplete="off">
+                <fieldset>
+                    <legend>Enter the following Info</legend>
+                    <div>
+                        <label class="required" for="name">Name</label>
+                        <input id="name" type="text" name="name" placeholder="Your name here" required maxlength="40">
+                    </div>
+                    <div>
+                        <label class="required" for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Your email here" required maxlength="50">
+                    </div>
+                    <div>
+                        <label class="required" for="address">Address</label>
+                        <textarea id="address" name="address" placeholder="Your address here" maxlength="100"></textarea>
+                    </div>
+                    <div>
+                        <label class="required" for="city">City</label>
+                        <input id="city" type="text" list="cities" name="city" placeholder="Where you live!" required/>    
+                        <datalist id="cities">	  	  
+                            <option value="Toronto">
+                            <option value="Ottawa">    
+                            <option value="Scarborough">	  
+                            <option value="Brampton">	  
+                            <option value="Vaughan">    
+                            <option value="Oshawa">    
+                            <option value="Markham">    
+                            <option value="Missisuaga">    
+                            <option value="Vancouver">    
+                            <option value="Edmonton">    
+                            <option value="Calgary">    
+                            <option value="Winnipeg">    
+                        </datalist>
+                    </div>
+                    <div>
+                        <label class="required" for="postal">Postal Code</label>
+                        <input id="postal" name="postal" type="text" placeholder="Your zip code!" maxlength="7" pattern="^[a-zA-Z]\d[a-zA-Z] ?\d[a-zA-Z]\d$" required>
+                    </div>
+                    <div>
+                        <p class="required">What is this About?</p>
+                        Question
+                        <input id="queryType1" name="queryType" value="1" type="radio" required><br>
+                        Comment
+                        <input id="queryType2" name="queryType" value="2" type="radio" required>
+                        Hiring
+                        <input id="queryType3" name="queryType" value="3" type="radio" required>
+                    </div>
+                    <div id="payRate" hidden>
+                        <label class="required" for="pay">Expected payrate</label>
+                        <!-- Only Required in case of hiring -->
+                        <input id="pay" name="payRate" type="number" min="0" placeholder="In Dollars ($) per Hour" value="0">
+                    </div>
+                    <div>
+                        <label class="required" for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" maxlength="100" required></textarea>
+                    </div>
+                    <div>
+                        <p class="required">Did you like my website?</p>
+                        Yes!
+                        <input id="feedback1" name="feedback" value="Likes your website!" type="radio" required>
+                        Delete It!
+                        <input id="feedback2" name="feedback" value="Wants you to delete your website!" type="radio" required>
+                    </div>  
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="citations">
+            <ul>
+                <li><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons" target="_blank">LINKEDIN ICONS CREATED BY RIAJULISLAM</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/github" title="github icons">GITHUB ICONS CREATED BY RIAJULISLAM</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons" target="_blank">INSTAGRAM ICONS CREATED BY PIXEL PERFECT</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons" target="_blank">FACEBOOK ICONS CREATED BY PIXEL PERFECT</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/amnish-singh-arora-6b6209145" target="_blank" title="LinkedIn Page"><img src="./Images/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://github.com/Amnish04?tab=overview&from=2021-02-01&to=2021-02-28" title="Github" target="_blank"><img src="./Images/github.png" alt="Github"></a></li>
+                <li><a href="https://www.instagram.com/singhamnish/" target="_blank" title="Instagram"><img src="./Images/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/singhamnish" target="_blank" title="Facebook"><img src="./Images/facebook.png" alt="Facebook"></a></li>
+                <li><a href="./Documents/Amnish_OntarioTreasuryBoard2_CoverLetter.pdf" hidden target="_blank" title="Facebook"><img src="./Images/facebook.png" alt="Facebook"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./js/behaviour.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+</body>
+</html>
