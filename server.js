@@ -20,6 +20,18 @@ const path = require("path");
 const multer = require("multer");
 const cloudinary = require('cloudinary').v2
 const streamifier = require('streamifier')
+const {
+  initialize,
+  getAllPosts,
+  getCategories,
+  addPost,
+  getPostById,
+  getPublishedPostsByCategory,
+  getPostsByMinDate,
+  addCategory,
+  deleteCategoryById,
+  deletePostById,
+} = require("./blog-service.js");
 
 const app = express();
 
