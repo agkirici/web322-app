@@ -1,0 +1,27 @@
+<div class="container" style="padding-top:60px">
+  <h1>Add New ExpresGram Post!</h1>
+  <form action="/instaPosts/add" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="profileID">Profile</label>
+
+
+      <select name="profileID" id="profileID" class="form-select">
+      {{#each data}}
+        <option value="{{profileID}}">{{profile}}</option>
+      {{/each}}
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="photo">Photo/Video Upload</label>
+      <input type="file" class="form-control" id="photo" name="photo">
+    </div>
+
+    <div class="form-group">
+      <label for="profile">Caption</label>
+      <input type="text" class="form-control" id="caption" name="caption">
+    </div>
+    </br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
