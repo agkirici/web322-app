@@ -1,4 +1,1 @@
-#•	ExpressGram is a Node.js and Express.js based Instagram clone app project. Leveraging the power of NPM, the application allows users to share photos and interact with each other's posts. 
-#•	The project focuses on advanced JavaScript/ES6 features such as the difference between "var," "let," and "const," error handling using try/catch/finally and throw, promises for asynchronous operations, and arrow functions with lexical "this" context. Express.js configuration and settings are implemented for smooth routing and middleware handling.
-#•	To enhance the user experience, the app utilizes Handlebars.js as a template engine for efficient rendering and dynamic content generation. 
-#•	Overall, ExpressGram aims to recreate the core functionalities of Instagram while exploring and implementing modern JavaScript concepts and utilizing the capabilities of Node.js and Express.js.
+#web322-app is a personal blog page. This is one of the our final project for the term. With this app I learned, Javascript, handlebars, HTML, CSS and enhanced my front end developer skills.
